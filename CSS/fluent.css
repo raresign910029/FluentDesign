@@ -1,0 +1,2265 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h3 {
+  color: black;
+  font-size: 32px;
+  letter-spacing: -0.03rem;
+  line-height: 40px;
+  font-weight: 600;
+  margin: 0px 0px 26px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* NAV部分 */
+nav {
+  width: 100%;
+  height: 48px;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav .container {
+  width: 1536px;
+  height: 48px;
+  background-color: black;
+  margin: 0 auto;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .container .logo {
+  width: 190px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .logo .logoPhoto {
+  width: 16px;
+  height: 16px;
+  -webkit-transition: 1S;
+  transition: 1S;
+}
+
+nav .container .logo .logoPhoto svg {
+  width: 16px;
+}
+
+nav .container .logo .logoPhoto svg rect {
+  width: 11px;
+  height: 11px;
+}
+
+nav .container .logo .logoPhoto svg .microsoft-red {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto svg .microsoft-green {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto svg .microsoft-blue {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto svg .microsoft-yellow {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto:hover .microsoft-red {
+  fill: #ff1515;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto:hover .microsoft-green {
+  fill: #06f806;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto:hover .microsoft-blue {
+  fill: #02afff;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container .logo .logoPhoto:hover .microsoft-yellow {
+  fill: #fbff0c;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+nav .container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container h1 .title {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+nav .container h1 .title:hover {
+  color: #1b6cb8;
+}
+
+nav .container .links {
+  height: 48px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 120px 0px 420px;
+}
+
+nav .container .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+nav .container .links ul li {
+  list-style-type: none;
+}
+
+nav .container .links ul li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 200ms linear 0ms;
+  transition: color 200ms linear 0ms;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav .container .links ul #link1_1:hover {
+  color: #2476c4;
+}
+
+nav .container .links ul #link2_1:hover {
+  color: #34c0ca;
+}
+
+nav .container .links ul #link3_1:hover {
+  color: #e67ae6;
+}
+
+nav .container .links ul #link4_1:hover {
+  color: #3ccf8b;
+}
+
+nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  height: 48px;
+  width: 48px;
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+nav .dropdown span {
+  position: absolute;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+  background-color: white;
+  width: 24px;
+  height: 2px;
+}
+
+nav .dropdown .topbar {
+  top: 17px;
+  left: 12px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+nav .dropdown .midbar {
+  top: 24px;
+  left: 12px;
+  opacity: 1;
+}
+
+nav .dropdown .btmbar {
+  top: 31px;
+  left: 12px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+nav .menu {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 48px;
+  left: 0px;
+  height: calc(100vh - 48px);
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 300ms ease 300ms;
+  transition: all 300ms ease 300ms;
+}
+
+nav .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+nav .menu ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 25px 30px;
+  position: relative;
+}
+
+/* NAV部分 */
+/* Main部分 */
+/* 第一部分 */
+main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container1 {
+  width: 100%;
+  margin: 145px 0px 60px;
+}
+
+.container1 .content1 {
+  width: 1536px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+}
+
+.container1 .content1 .content1left {
+  width: 410px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.container1 .content1 .content1left .content1top .content1toptitle {
+  font-size: 64px;
+  line-height: 80px;
+  color: #4fe5ff;
+  font-weight: 600;
+  margin: 0px 0px 0px -6px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container1 .content1 .content1left .content1btm {
+  width: 100%;
+  margin: 100px 0px 30px;
+}
+
+.container1 .content1 .content1left .content1btm .contentbtmContent {
+  width: 100%;
+  max-width: 352px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container1 .content1 .content1left .content1btm .contentbtmContent p {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px 0px 24px;
+}
+
+.container1 .content1 .content1right {
+  text-align: center;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container1 .content1 .content1right .content1rightimgR {
+  position: absolute;
+  top: -15px;
+  right: 180px;
+  pointer-events: none;
+}
+
+.container1 .content1 .content1right .content1rightimgL {
+  position: absolute;
+  bottom: 155px;
+  left: 180px;
+  pointer-events: none;
+}
+
+/* 第一部分 */
+/* 第二部分 */
+.container2 {
+  width: 100%;
+  position: relative;
+  background-color: chocolate;
+}
+
+.container2 .colorbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container2 .colorbox .colorboxcontents {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent {
+  width: 25%;
+  height: 384px;
+  position: relative;
+  z-index: 2;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent1link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  background-color: #258ede;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent1link:hover {
+  background-color: #0c75c5;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent2link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  background-color: #4fe5ff;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent2link:hover {
+  background-color: #36cce6;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent3link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  background-color: #cf8fff;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent3link:hover {
+  background-color: #b676e6;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent4link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  background-color: #69e56e;
+}
+
+.container2 .colorbox .colorboxcontents .colorboxcontent .colorboxcontent4link:hover {
+  background-color: #50cc55;
+}
+
+.container2 .colorboxcontentlinktop {
+  min-height: 96px;
+  width: 100%;
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 26px;
+}
+
+.container2 .colorboxcontentlinkmid {
+  height: 100px;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0px 26px;
+}
+
+.container2 .colorboxcontentlinkmid h3 {
+  color: black;
+  font-size: 32px;
+  letter-spacing: -0.03rem;
+  line-height: 40px;
+  font-weight: 600;
+  margin: 0px 0px 26px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container2 .colorboxcontentlinkmid p {
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container2 .colorboxcontentlinkbtm {
+  height: 48px;
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0px 26px 10px;
+}
+
+.container2 .colorboxcontentlinkbtm .arrow {
+  margin: 0px 16px 0px 0px;
+}
+
+.container2 .colorboxcontentlinkbtm .getStarted {
+  font-size: 16px;
+  font-family: "Segoe UI Mono", mono;
+  letter-spacing: 0.01rem;
+  color: black;
+}
+
+.container2::before {
+  content: "";
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #2280c8;
+}
+
+.container2::after {
+  content: "";
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: #5fcf63;
+}
+
+/* 第二部分*/
+/* 第三部分 */
+.container3 {
+  width: 100%;
+  min-height: 768px;
+  background: url(https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg) 50% center/cover no-repeat fixed #cccccc;
+}
+
+.container3 .content3 {
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container3 .content3 .content3top {
+  width: 100%;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  padding: 10px 20px 0px;
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container3 .content3 .content3top .content3toptext {
+  color: black;
+  font-size: 128px;
+  line-height: 150px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  border-spacing: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container3 .content3 .content3top.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container3 .content3 .content3btm {
+  width: 100%;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  margin: 60px 0px 0px;
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container3 .content3 .content3btm .content3btmtext {
+  width: 100%;
+  max-width: 384px;
+  padding: 0px 16px 0px 24px;
+}
+
+.container3 .content3 .content3btm .content3btmtext p {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container3 .content3 .content3btm.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* 第三部分 */
+/* 第四部份 */
+.container4 {
+  width: 100%;
+  background-color: #191919;
+}
+
+.container4 .content4 {
+  position: relative;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container4 .content4 .content4R {
+  position: absolute;
+  top: -200px;
+  right: 130px;
+  pointer-events: none;
+  z-index: 4;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container4 .content4 .content4R.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container4 .content4 .content4L {
+  position: absolute;
+  top: 570px;
+  left: 190px;
+  pointer-events: none;
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
+  -webkit-transition: -webkit-transform 600ms linear 0ms;
+  transition: -webkit-transform 600ms linear 0ms;
+  transition: transform 600ms linear 0ms;
+  transition: transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container4 .content4 .content4L.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container4 .content4 .content4Mid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  padding: 100px 100px 50px;
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container4 .content4 .content4Mid.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* 第四部份 */
+/* 第五部分 */
+.container5 {
+  width: 100%;
+  background-color: #191919;
+}
+
+.container5 .content5 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container5 .content5 .content5_position {
+  width: 384px;
+  margin: 0px 0px 50px;
+  padding: 0px 16px;
+}
+
+.container5 .content5 .content5_position .content5_text {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* 第五部分 */
+/* 第六部分 */
+.container6 {
+  width: 100%;
+  position: relative;
+  background-color: #191919;
+}
+
+.container6 .content6_1 {
+  position: absolute;
+  bottom: 80px;
+  left: 0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.container6 .content6_1 .content6_1text {
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container6 .content6_1 .content6_1text h1 {
+  color: #191919;
+  font-size: 128px;
+  line-height: 144px;
+  font-weight: 600;
+  margin: 0px 0px 0px 26px;
+}
+
+.container6 .content6_2 {
+  width: 100%;
+  -webkit-transform: translateY(200px) scale(1.2);
+          transform: translateY(200px) scale(1.2);
+  /* opacity: 0; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+.container6 .content6_2 img {
+  width: 100%;
+  min-width: 2000px;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container6 .content6_2.style {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0px, 7px, 0px) scale(1.02, 1.02);
+          transform: translate3d(0px, 7px, 0px) scale(1.02, 1.02);
+}
+
+/* 第六部分 */
+/* 第七部分 */
+.container7 {
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+  min-height: 948px;
+  background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center/cover no-repeat fixed black;
+}
+
+.container7 .content7 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container7 .content7 .content7_1 {
+  position: absolute;
+  top: -240px;
+  right: -260px;
+  width: 768px;
+}
+
+.container7 .content7 .content7_1 .content7_1pic1 {
+  position: absolute;
+  top: -120px;
+  left: 2px;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateY(122px);
+          transform: translateY(122px);
+}
+
+.container7 .content7 .content7_1 .content7_1pic1.style {
+  -webkit-transform: translate3d(0px, -30px, 0px);
+          transform: translate3d(0px, -30px, 0px);
+}
+
+.container7 .content7 .content7_1 .content7_1pic2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.container7 .content7 .content7_2 .content7_2text {
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  font-size: 395px;
+  line-height: 1;
+  color: black;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container7 .content7 .content7_2 .content7_2text.style {
+  opacity: 0.999647;
+  -webkit-transform: translate3d(0px, 0.0706px, 0px);
+          transform: translate3d(0px, 0.0706px, 0px);
+}
+
+.container7 .content7 .content7_3 .content7_3text {
+  position: absolute;
+  top: 140px;
+  right: -30px;
+  font-size: 395px;
+  line-height: 1;
+  color: black;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container7 .content7 .content7_3 .content7_3text.style {
+  opacity: 0.996147;
+  -webkit-transform: translate3d(0px, 0.77051px, 0px);
+          transform: translate3d(0px, 0.77051px, 0px);
+}
+
+.container7 .content7 .content7_4 {
+  position: absolute;
+  top: 550px;
+  left: 370px;
+  pointer-events: none;
+  /* opacity: 0; */
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container7 .content7 .content7_4.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* 第七部分 */
+/* 第八部分 */
+.container8 {
+  width: 100%;
+  background-color: #cccccc;
+  min-height: 820px;
+  position: relative;
+}
+
+.container8 .content8_1 {
+  width: 1536px;
+  position: relative;
+  margin: 0px auto;
+}
+
+.container8 .content8_1 .content8_1titile {
+  width: 100%;
+  padding: 140px 40px 0px 8px;
+}
+
+.container8 .content8_1 .content8_1titile h2 {
+  color: black;
+  font-size: 128px;
+  line-height: 150px;
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container8 .content8_1 .content8_1description {
+  width: 100%;
+  margin: 60px 0px 0px;
+}
+
+.container8 .content8_1 .content8_1description .content8_1text {
+  width: 100%;
+  max-width: 384px;
+  padding: 0px 16px;
+}
+
+.container8 .content8_1 .content8_1description .content8_1text p {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* 第八部分 */
+/* 第九部分 */
+.container9 {
+  width: 100%;
+  min-height: 768px;
+  background: url(https://www.microsoft.com/design/fluent/assets/images/space.jpg) 50% center/cover no-repeat fixed black;
+}
+
+.container9 .content9 {
+  position: relative;
+  z-index: 2;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container9 .content9 .content9pic1 {
+  position: absolute;
+  top: -95px;
+  left: 340px;
+  pointer-events: none;
+  /* opacity: 0; */
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container9 .content9 .content9pic1.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container9 .content9 .content9pic2 {
+  position: absolute;
+  top: 185px;
+  left: 165px;
+  pointer-events: none;
+  /* opacity: 0; */
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container9 .content9 .content9pic2.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container9 .content9 .content9pic3 {
+  position: absolute;
+  top: -125px;
+  left: 620px;
+  pointer-events: none;
+  /* opacity: 0; */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container9 .content9 .content9pic3.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container9 .content9 .content9pic4 {
+  position: absolute;
+  top: 530px;
+  right: 85px;
+  pointer-events: none;
+  /* opacity: 0; */
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container9 .content9 .content9pic4.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.container9 .content9 .content9pic5 {
+  position: absolute;
+  top: 370px;
+  right: 220px;
+  pointer-events: none;
+  /* opacity: 0; */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+.container9 .content9 .content9pic5.active {
+  opacity: 1;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+/* 第九部分 */
+/* 第十部分 */
+.container10 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin: 0px 0px 160px;
+}
+
+.container10 .content10 {
+  position: relative;
+  z-index: 2;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container10 .content10 .content10cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container10 .content10 .content10cards .content10card {
+  width: 25%;
+  height: 384px;
+  position: relative;
+  z-index: 2;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: background-color 200ms linear 0ms;
+  transition: background-color 200ms linear 0ms;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink {
+  width: 100%;
+  padding: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 2px 0px 0px;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_photo {
+  width: 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0px 16px 0px 0px;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_photo svg {
+  max-width: 20px;
+  height: auto;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_photo svg path {
+  -webkit-transition: fill 200ms linear 0ms;
+  transition: fill 200ms linear 0ms;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_photo svg path.one {
+  fill: white;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_photo svg path.two {
+  fill: white;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_text {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_text label {
+  color: white;
+  -webkit-transition: color 200ms linear 0ms;
+  transition: color 200ms linear 0ms;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_text label.one {
+  color: white;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_text label.two {
+  color: white;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_text label.three {
+  color: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks .content10cardlink.btm .m_text label.four {
+  color: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.a_group:hover {
+  background-color: white;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.a_group:hover .content10cardlink.btm .m_photo svg path {
+  fill: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.a_group:hover .content10cardlink.btm .m_text label {
+  color: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.a_group:hover p {
+  color: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.b_group:hover {
+  background-color: yellow;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.b_group:hover .content10cardlink.btm .m_photo svg path {
+  fill: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.b_group:hover .content10cardlink.btm .m_text label {
+  color: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlinks.b_group:hover p {
+  color: black;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlink.first p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: color 200ms linear 0ms;
+  transition: color 200ms linear 0ms;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlink.second p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: color 200ms linear 0ms;
+  transition: color 200ms linear 0ms;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlink.third p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: black;
+  -webkit-transition: color 200ms linear 0ms;
+  transition: color 200ms linear 0ms;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container10 .content10 .content10cards .content10card .content10cardlink.fourth p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: black;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container10 .content10 .content10cards .content10card.first {
+  background-color: black;
+}
+
+.container10 .content10 .content10cards .content10card.second {
+  background-color: #393939;
+}
+
+.container10 .content10 .content10cards .content10card.third {
+  background-color: #767676;
+}
+
+.container10 .content10 .content10cards .content10card.fourth {
+  background-color: #cccccc;
+}
+
+/* 第十部分 */
+/* 第十一部份 */
+.container11 {
+  width: 100%;
+}
+
+.container11 .content11 {
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.container11 .content11 .content11box {
+  width: 100%;
+}
+
+.container11 .content11 .content11box .content11box_group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 200px;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_1 {
+  width: 575px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_1 h2 {
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
+  font-weight: 600;
+  padding: 0px 0px 0px 16px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  margin: 0px;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 330px 35px 208px;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2top {
+  width: 100%;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2top p {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border-spacing: 0px;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm {
+  width: 100%;
+  margin: 70px 0px 0px;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm a img {
+  margin: 0px 16px 0px 0px;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm a span {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm a:hover {
+  opacity: 0.6;
+}
+
+/* 第十一部份 */
+/* footer */
+.btm_container {
+  width: 100%;
+  height: 48px;
+}
+
+.btm_container .btmcontents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.btm_container .btmcontents .btmcontent.one {
+  width: 190px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.btm_container .btmcontents .btmcontent.one svg {
+  width: 16px;
+}
+
+.btm_container .btmcontents .btmcontent.one svg rect {
+  width: 11px;
+  height: 11px;
+}
+
+.btm_container .btmcontents .btmcontent.one svg .microsoft-red {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+.btm_container .btmcontents .btmcontent.one svg .microsoft-green {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+.btm_container .btmcontents .btmcontent.one svg .microsoft-blue {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+.btm_container .btmcontents .btmcontent.one svg .microsoft-yellow {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+.btm_container .btmcontents .btmcontent.two {
+  height: 48px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 100px 0px 0px;
+}
+
+.btm_container .btmcontents .btmcontent.two ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.btm_container .btmcontents .btmcontent.two ul li {
+  width: auto;
+  color: white;
+  font-size: 12px;
+  line-height: 48px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btm_container .btmcontents .btmcontent.two ul li a {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.btm_container .btmcontents .btmcontent.three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.btm_container .btmcontents .btmcontent.three a {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -webkit-box-align: center;
+}
+
+.btm_container .btmcontents .btmcontent.three a svg {
+  width: 20px;
+  fill: white;
+}
+
+/* footer */
+/* Main部分 */
+@media screen and (max-width: 1940px) {
+  .container8 .content8_2 {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+  }
+  .container8 .content8_2 img {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  nav .container {
+    width: 1336px;
+  }
+  .container1 .content1 {
+    width: 1336px;
+  }
+  .container1 .content1 .content1right .content1rightimgR {
+    top: -40px;
+    right: 36px;
+  }
+  .container1 .content1 .content1right .content1rightimgL {
+    bottom: 160px;
+    left: 30px;
+  }
+  .container2 .colorbox {
+    width: 1336px;
+  }
+  .container3 .content3 {
+    width: 1336px;
+  }
+  .container4 .content4 {
+    width: 1336px;
+  }
+  .container4 .content4 .content4R {
+    right: 30px;
+  }
+  .container5 .content5 {
+    width: 1336px;
+  }
+  .coantainer6 .content6_1 .content6_1text {
+    width: 1336px;
+  }
+  .coantainer6 .content6_1 .content6_1text h1 {
+    font-size: 96px;
+    line-height: 128px;
+  }
+  .content7 {
+    width: 1336px;
+  }
+  .content7 .content7_2 .content7_2text {
+    top: -40px;
+    font-size: 295px;
+  }
+  .content7 .content7_3 .content7_3text {
+    top: 120px;
+    right: -30px;
+    font-size: 295px;
+  }
+  .container8 .content8_1 {
+    width: 1336px;
+  }
+  .container8 .content8_2 img {
+    max-width: 50vw;
+  }
+  .container9 .content9 {
+    width: 1336px;
+  }
+  .container10 .content10 {
+    width: 1336px;
+  }
+  .container11 .content11 {
+    width: 1336px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_1 {
+    width: 50%;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_2 {
+    width: 50%;
+    padding: 0px 16px 35px;
+  }
+  .btm_container .btmcontents {
+    width: 1336px;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  nav .container {
+    width: 1136px;
+  }
+  nav .container .links {
+    padding: 0px 60px 0px 120px;
+  }
+  .container1 .content1 {
+    width: 1136px;
+  }
+  .container1 .content1 .content1right .content1rightimgR {
+    top: 15px;
+    right: 36px;
+  }
+  .container1 .content1 .content1right .content1rightimgL {
+    bottom: 120px;
+    left: 30px;
+  }
+  .container1 .content1 .content1left .content1btm .contentbtmContent {
+    max-width: 384px;
+  }
+  .container2 .colorbox {
+    width: 1136px;
+  }
+  .container2 .colorboxcontentlinkmid {
+    height: 180px;
+  }
+  .container3 .content3 {
+    width: 1136px;
+  }
+  .container3 .content3 .content3top {
+    padding: 10px 0px 0px 16px;
+  }
+  .container3 .content3 .content3top .content3toptext {
+    font-size: 96px;
+    line-height: 120px;
+  }
+  .container3 .content3 .content3btm {
+    margin: 40px 0px 0px;
+  }
+  .container4 .content4 {
+    width: 1136px;
+  }
+  .container4 .content4 .content4R {
+    top: -200px;
+  }
+  .container5 .content5 {
+    width: 1136px;
+  }
+  .coantainer6 .content6_1 .content6_1text {
+    width: 1136px;
+  }
+  .content7 {
+    width: 1136px;
+  }
+  .content7 .content7_1 {
+    display: none;
+  }
+  .content7 .content7_2 .content7_2text {
+    top: -20px;
+    left: 0px;
+  }
+  .content7 .content7_3 .content7_3text {
+    top: 180px;
+    right: -30px;
+  }
+  .content7 .content7_4 {
+    top: 550px;
+    left: 370px;
+  }
+  .container8 .content8_1 {
+    width: 1136px;
+  }
+  .container8 .content8_1 .content8_1titile {
+    padding: 60px 40px 0px 8px;
+  }
+  .container9 .content9 {
+    width: 1136px;
+  }
+  .container9 .content9 .content9pic1 {
+    top: -75px;
+    left: 50%;
+    margin: 0px 0px 0px -215px;
+  }
+  .container9 .content9 .content9pic2 {
+    top: 40vh;
+    left: 65px;
+  }
+  .container9 .content9 .content9pic3 {
+    top: 80px;
+    left: auto;
+    right: 60px;
+  }
+  .container9 .content9 .content9pic5 {
+    top: 470px;
+    right: 220px;
+  }
+  .container10 {
+    position: relative;
+    z-index: 1;
+  }
+  .container10 .content10 {
+    width: 1136px;
+  }
+  .container11 .content11 {
+    width: 1136px;
+  }
+  .btm_container .btmcontents {
+    width: 1136px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  nav .container {
+    width: 960px;
+  }
+  .container1 .content1 {
+    width: 960px;
+  }
+  .container1 .content1 .content1right {
+    width: 50%;
+    padding: 0px 40px;
+  }
+  .container1 .content1 .content1right img {
+    max-width: 100%;
+  }
+  .container1 .content1 .content1right .content1rightimgR {
+    display: none;
+  }
+  .container1 .content1 .content1right .content1rightimgL {
+    display: none;
+  }
+  .container1 .content1 .content1left {
+    width: 50%;
+  }
+  .container1 .content1 .content1left .content1btm .contentbtmContent {
+    max-width: 384px;
+  }
+  .container2 .colorbox {
+    width: 960px;
+  }
+  .container2 .colorbox .colorboxcontent .colorboxcontent1inkbtm {
+    padding: 0px 30px;
+  }
+  .container2 .colorboxcontentlinkbtmtext {
+    font-size: 14px;
+  }
+  .container3 {
+    min-height: 668px;
+  }
+  .container3 .content3 {
+    width: 960px;
+  }
+  .container3 .content3 .content3top {
+    padding: 20px 0px 60px;
+  }
+  .container3 .content3 .content3btm {
+    margin: 0px;
+  }
+  .container3 .content3 .content3btm .content3btmtext {
+    margin: 0px;
+    padding: 0px 5px;
+  }
+  .container4 .content4 {
+    width: 960px;
+  }
+  .container5 .content5 {
+    width: 960px;
+  }
+  .coantainer6 .content6_1 .content6_1text {
+    width: 960px;
+  }
+  .coantainer6 .content6_1 .content6_1text h1 {
+    line-height: 104px;
+  }
+  .container7 {
+    min-height: 668px;
+  }
+  .container7 .content7 {
+    width: 960px;
+  }
+  .container7 .content7 .content7_2 .content7_2text {
+    font-size: 228px;
+    top: 40px;
+    left: 14px;
+  }
+  .container7 .content7 .content7_3 .content7_3text {
+    font-size: 228px;
+    top: 220px;
+    right: 10px;
+  }
+  .container7 .content7 .content7_4 {
+    display: none;
+  }
+  .container8 {
+    min-height: 668px;
+  }
+  .container8 .content8_1 {
+    width: 960px;
+  }
+  .container8 .content8_1 .content8_1titile {
+    padding: 29px 0px 0px;
+  }
+  .container8 .content8_1 .content8_1titile h2 {
+    font-size: 96px;
+    line-height: 104px;
+  }
+  .container9 {
+    min-height: 668px;
+  }
+  .container9 .content9 {
+    width: 960px;
+  }
+  .container10 .content10 {
+    width: 960px;
+  }
+  .container10 .content10cards .content10card .content10cardlink p {
+    font-size: 28px;
+  }
+  .container11 .content11 {
+    width: 960px;
+  }
+  .btm_container .btmcontents {
+    width: 960px;
+  }
+  .btm_container .btmcontents .btmcontent.one {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav .container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  nav .container .logo {
+    width: 60px;
+  }
+  nav .container .links {
+    padding: 0px 0px 0px 120px;
+  }
+  .coantainer1 .content1 {
+    width: 100%;
+    padding: 30px;
+  }
+  .container2 .colorbox {
+    width: 100%;
+    padding: 0px;
+  }
+  .container2 .colorbox .colorboxcontents .colorboxcontent {
+    width: 50%;
+    height: 320px;
+  }
+  .container2 .colorboxcontentlinkbtm {
+    padding: 0px 30px;
+  }
+  .container2 .colorboxcontentlinkbtm .colorboxcontentlinkbtmtext {
+    font-size: 14px;
+  }
+  .container2 .colorboxcontentlinktop {
+    padding: 30px 30px 16px;
+  }
+  .container2 .colorboxcontentlinkmid {
+    height: auto;
+    padding: 0px 30px;
+  }
+  .container3 .content3 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container3 .content3 .content3top {
+    padding: 29px 0px 40px;
+  }
+  .container3 .content3 .content3top .content3toptext {
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0px;
+  }
+  .container3 .content3 .content3btm .content3btmtext {
+    padding: 0px 0px 0px 4px;
+  }
+  .container4 .content4 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container5 .content5 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .coantainer6 .content6_1 {
+    bottom: 60px;
+  }
+  .coantainer6 .content6_1 .content6_1text {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .coantainer6 .content6_1 .content6_1text h1 {
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0px;
+  }
+  .container7 .content7 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container8 .content8_1 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container8 .content8_1 .content8_1titile h2 {
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0px;
+  }
+  .container8 .content8_1 .content8_1description .content8_1text {
+    padding: 0px 0px 0px 4px;
+  }
+  .container8 .content8_2 {
+    right: -20vw;
+  }
+  .container8 .content8_2 img {
+    max-width: 70vw;
+  }
+  .container9 .content9 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container10 {
+    margin: 0px 0px 60px;
+  }
+  .container10 .content10 {
+    width: 100%;
+  }
+  .container10 .content10 .content10cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container10 .content10 .content10cards .content10card {
+    width: 50%;
+  }
+  .container10 .content10 .content10cards .content10card .content10cardlink {
+    padding: 19px 28px;
+  }
+  .container10 .content10 .content10cards .content10card .content10cardlink.btm {
+    padding: 0px 30px 30px;
+  }
+  .container11 .content11 {
+    width: 100%;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_1 {
+    margin: 0px 30px 30px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_1 h2 {
+    padding: 0px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_2 {
+    padding: 0px 30px 35px;
+  }
+  .btm_container {
+    height: auto;
+    padding: 0px 0px 18px;
+  }
+  .btm_container .btmcontents {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    padding: 0px 30px;
+  }
+  .btm_container .btmcontents .btmcontent .btmcontent.one {
+    width: 80px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .btm_container .btmcontents .btmcontent .btmcontent.two {
+    width: 100%;
+    height: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 0px;
+  }
+  .btm_container .btmcontents .btmcontent .btmcontent.three {
+    width: 50%;
+    top: 0px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    position: absolute;
+    right: 30px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container1 .content1 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container1 .content1 .content1right {
+    width: 40%;
+    padding: 0px 0px 0px 30px;
+  }
+  .container1 .content1 .content1left {
+    width: 60%;
+  }
+  .container1 .content1 .content1left .content1btm .contentbtmContent {
+    width: 100%;
+    max-width: 352px;
+  }
+  .container3 {
+    background-attachment: scroll;
+  }
+  .container3 .content3 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container4 .content4 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container5 .content5 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container5 .content5 .content5_position {
+    padding: 0px;
+  }
+  .container8 .content8_1 {
+    width: 100%;
+    padding: 0px 30px 40px;
+  }
+  .container9 {
+    background-attachment: scroll;
+  }
+  .container9 .content9 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container10 {
+    margin: 0px;
+  }
+  .container11 .content11 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container11 .content11 .content11box .content11box_group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_1 {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_2 {
+    width: 100%;
+    padding: 0px 0px 35px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm {
+    margin: 30px 0px 0px;
+  }
+  .container11 .content11 .content11box .content11box_group .content11box_group_2 .content11box_group_2btm span {
+    font-size: 12px;
+  }
+  .btm_container .btmcontents {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav .container .links {
+    display: none;
+  }
+  nav .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .menu.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .container1 .content1 .content1left .content1top .content1toptitle {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .container1 .content1 .content1left .content1btm {
+    margin: 60px 0px 30px;
+  }
+  .container2 .colorbox .colorboxcontents .colorboxcontent {
+    width: 100%;
+  }
+  .container4 .content4 .content4R {
+    top: -300px;
+    right: 100px;
+  }
+  .container8 .content8_2 img {
+    max-width: 60vw;
+  }
+  .container9 .content9 .content9pic5 {
+    display: none;
+  }
+  .container10 .content10 .content10cards .content10card {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container1 {
+    margin: 0px 0px 30px;
+  }
+  .container1 .content1left {
+    width: 100%;
+  }
+  .container1 .content1left .content1top {
+    margin: 60px 0px 30px;
+  }
+  .container1 .content1left .content1top .content1toptitle {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .container1 .content1right {
+    display: none;
+  }
+  .container3 {
+    min-height: 768px;
+  }
+  .container3 .content3 .content3top .content3toptext {
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .container4 .content4 .content4R {
+    display: none;
+  }
+  .container4 .content4 .content4L {
+    left: 90vw;
+  }
+  .container4 .content4 .content4Mid {
+    padding: 60px 30px;
+  }
+  .container5 .content5 {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .coantainer6 .content6_1 .content6_1text h1 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .container7 .content7 .content7_2 .content7_2text {
+    font-size: 168px;
+  }
+  .container7 .content7 .content7_3 .content7_3text {
+    font-size: 168px;
+  }
+  .container8 {
+    min-height: 468px;
+  }
+  .container8 .content8_1 .content8_1titile h2 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .container8 .content8_1 .content8_1description {
+    margin: 40px 0px 0px;
+  }
+  .container8 .content8_2 {
+    display: none;
+  }
+  .btm_container .btmcontents {
+    width: 100%;
+    padding: 10px 30px 0px;
+  }
+  .btm_container .btmcontents .btmcontent.two ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .btm_container .btmcontents .btmcontent.two ul li {
+    line-height: 30px;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container2 .colorbox .colorboxcontents {
+    height: auto;
+  }
+  .container3 .content3 .content3top .content3toptext {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .container7 .content7 .content7_2 .content7_2text {
+    font-size: 128px;
+  }
+  .container7 .content7 .content7_3 .content7_3text {
+    font-size: 128px;
+  }
+  .container8 .content8_1 .content8_1titile h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .container9 {
+    min-height: 568px;
+  }
+  .container9 .content9 .content9pic1 {
+    width: 100%;
+    max-width: 50%;
+    left: 30%;
+    margin: 0px;
+  }
+  .container9 .content9 .content9pic1 img {
+    max-width: 100%;
+  }
+  .container9 .content9 .content9pic2 {
+    display: none;
+  }
+  .container9 .content9 .content9pic3 {
+    display: none;
+  }
+  .container9 .content9 .content9pic4 {
+    display: none;
+  }
+  .btmcontent3 {
+    position: relative;
+    width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    right: auto;
+    left: auto;
+    top: auto;
+    margin: 16px 0px 0px;
+  }
+  .btmcontent3 a {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container7 {
+    min-height: 500px;
+  }
+  .container7 .content7 .content7_2 .content7_2text {
+    font-size: 96px;
+  }
+  .container7 .content7 .content7_3 .content7_3text {
+    font-size: 96px;
+    top: 160px;
+  }
+  .container9 .content9 .content9pic1 {
+    top: 0px;
+    width: 100%;
+    max-width: 100%;
+    left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0px 60px;
+  }
+  .container9 .content9 .content9pic1 img {
+    width: 100%;
+  }
+  .container10 .content10 .content10cards .content10card .content10cardlink p {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+/*# sourceMappingURL=fluent.css.map */
